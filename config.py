@@ -8,7 +8,7 @@ spark = SparkSession.builder \
 
 #Movie Ratings Data
 ratings_df = spark.read.csv(
-    "C:/Users/kayla/StreamRec/ml-latest-small/ratings.csv",
+    "local/path/to/dataset/",
     header=True,
     inferSchema=True
 )
